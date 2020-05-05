@@ -1,0 +1,126 @@
+.footer {
+	min-height: 167px;
+}
+
+.footer__row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	padding-top: 30px;
+}
+
+.footer__block {}
+
+.footer__logo {
+	position: relative;
+}
+
+.footer__logo-block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.footer__logo:after{
+	content: "";
+	position: absolute;
+	background-color: rgba(38, 50, 56, 0.15);
+	width: 1px;
+	height: 40px;
+	left: 110%;
+	top: 0;
+}
+
+.footer__text {
+	font-family: PF BeauSans Pro;
+	font-size: 13px;
+	line-height: 18px;
+	max-width: 240px;
+	margin-top: 20px;
+	color: rgba(38, 50, 56, 0.7);
+}
+
+.footer__title {
+	padding-left: 40px;
+}
+
+.footer__title p {
+	font-size: 13px;
+	line-height: 18px;
+	color: rgba(38, 50, 56, 0.7);
+}
+
+.footer__body {}
+
+.footer__body-title {
+	font-size: 13px;
+	line-height: 18px;
+	color: rgba(38, 50, 56, 0.7);
+}
+
+.footer__body-sub-title {
+	font-size: 22px;
+	line-height: 31px;
+	margin-top: 6px;
+	color: #00ADEE;
+}
+
+.footer__body-btn {}
+
+.footer__body-btn button{
+	font-size: 12px;
+	line-height: 17px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	width: 170px;
+	height: 40px;
+	background: #00ADEE;
+	border-radius: 4px;
+	color: #FFFFFF;
+}	
+
+@media(max-width: 768px) {
+	.footer__row{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.footer__title{
+		padding-left: 0;
+		padding-top: 10px;
+	}
+	.footer__logo-block{
+		display: block;
+		text-align: center;
+	}
+	.footer__body{
+		text-align: center;
+	}
+	.footer__text{
+		text-align: center;
+	}
+	.footer__tetx{
+		text-align: center;
+	}
+	.footer__body-title{
+		text-align: center;
+		padding-top: 10px;
+	}
+	.footer__body-sub-title{
+		text-align: center;
+		padding-bottom: 15px;
+	}
+}
